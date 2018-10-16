@@ -36,6 +36,10 @@ PRODUCT_PACKAGES += \
 # Default is nosdcard, S/W button enabled in resource
 PRODUCT_CHARACTERISTICS := nosdcard
 
+# Fastboot
+PRODUCT_PACKAGES += \
+    fastbootd
+
 # Kernel
 KERNEL_PREBUILT_DIR := $(DEVICE_PATH)-kernel
 
