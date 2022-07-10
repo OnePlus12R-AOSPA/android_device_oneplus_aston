@@ -162,6 +162,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.neuralnetworks-V1-ndk.vendor
 
+# Overlays
+PRODUCT_PACKAGES += \
+    OPlusWifiResCommon
+
 # Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 
