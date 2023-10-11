@@ -36,6 +36,9 @@ PRODUCT_PACKAGES += \
 # Default is nosdcard, S/W button enabled in resource
 PRODUCT_CHARACTERISTICS := nosdcard
 
+# Enable project quotas and casefolding for emulated storage without sdcardfs.
+$(call inherit-product, $(SRC_TARGET_DIR)/product/emulated_storage.mk)
+
 # Fastboot
 PRODUCT_PACKAGES += \
     fastbootd
