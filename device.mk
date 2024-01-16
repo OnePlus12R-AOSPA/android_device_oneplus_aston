@@ -61,6 +61,26 @@ KERNEL_PREBUILT_DIR := $(DEVICE_PATH)-kernel
 # Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 
+# QTI Components
+TARGET_COMMON_QTI_COMPONENTS := \
+    adreno \
+    alarm \
+    audio \
+    av \
+    bt \
+    display \
+    gps \
+    init \
+    media \
+    nfc \
+    overlay \
+    perf \
+    telephony \
+    usb \
+    vibrator \
+    wfd \
+    wlan
+
 # Setup dalvik vm configs
 $(call inherit-product, frameworks/native/build/phone-xhdpi-6144-dalvik-heap.mk)
 
