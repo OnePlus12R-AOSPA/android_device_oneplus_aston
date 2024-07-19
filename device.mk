@@ -23,6 +23,9 @@ PRODUCT_PACKAGES += \
     checkpoint_gc \
     otapreopt_script
 
+# Kernel
+KERNEL_PREBUILT_DIR := $(DEVICE_PATH)-kernel
+
 # Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 
