@@ -47,6 +47,8 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     fstab.qcom \
     init.target.rc \
+    init.oplus.hw.rc \
+    init.oplus.hw.rc.recovery \
     init.oplus.rc \
     ueventd.oplus.rc
 
