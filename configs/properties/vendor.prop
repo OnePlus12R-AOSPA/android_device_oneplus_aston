@@ -1,0 +1,49 @@
+# Bluetooth
+bluetooth.device.default_name=OnePlus 12R 5G
+persist.sys.fflag.override.settings_bluetooth_hearing_aid=true
+persist.vendor.qcom.bluetooth.a2dp_offload_cap=sbc-aptx-aptxtws-aptxhd-aac-ldac-aptxadaptiver2
+persist.vendor.qcom.bluetooth.aac_frm_ctl.enabled=true
+persist.vendor.qcom.bluetooth.aac_vbr_ctl.enabled=true
+persist.vendor.qcom.bluetooth.aptxadaptiver2_1_support=true
+
+# DPM
+persist.vendor.dpm.vndr.idletimer.mode=default
+persist.vendor.dpm.vndr.halservice.enable=1
+persist.vendor.dpm.vndr.feature=11
+
+# DRM
+drm.service.enabled=true
+
+# FRP
+ro.frp.pst=/dev/block/bootdevice/by-name/frp
+
+# FUSE passthrough
+persist.sys.fuse.passthrough.enable=true
+
+# Graphics
+ro.surface_flinger.set_idle_timer_ms=250
+ro.surface_flinger.set_touch_timer_ms=300
+
+# Incremental FS
+ro.incremental.enable=yes
+
+# Keystore
+ro.hardware.keystore_desede=true
+
+# Media
+debug.stagefright.c2inputsurface=-1
+media.stagefright.enable-aac=true
+media.stagefright.enable-fma2dp=true
+media.stagefright.enable-http=true
+media.stagefright.enable-player=true
+media.stagefright.enable-qcp=true
+media.stagefright.enable-scan=true
+media.stagefright.thumbnail.prefer_hw_codecs=true
+ro.mediaserver.64b.enable=true
+vendor.media.omx=0
+
+# USB
+vendor.usb.product_string=OnePlus 12R 5G
+
+# Zygote
+zygote.critical_window.minute=10
