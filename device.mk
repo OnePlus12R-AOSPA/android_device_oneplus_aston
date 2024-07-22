@@ -164,7 +164,16 @@ PRODUCT_PACKAGES += \
 
 # Overlays
 PRODUCT_PACKAGES += \
-    OPlusWifiResCommon
+    OPlusCarrierConfigResCommon \
+    OPlusFrameworksResCommon \
+    OPlusFrameworksResTarget \
+    OPlusSettingsProviderResTarget \
+    OPlusSettingsResCommon \
+    OPlusSettingsResTarget \
+    OPlusSystemUIResCommon \
+    OPlusSystemUIResTarget \
+    OPlusWifiResCommon \
+    OPlusWifiResTarget
 
 # Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
