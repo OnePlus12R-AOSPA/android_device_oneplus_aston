@@ -68,6 +68,23 @@ PRODUCT_PACKAGES += \
 # Default is nosdcard, S/W button enabled in resource
 PRODUCT_CHARACTERISTICS := nosdcard
 
+# Display
+TARGET_GRALLOC_HANDLE_HAS_NO_UBWCP := true
+
+include hardware/qcom/display/config/display-board.mk
+include hardware/qcom/display/config/display-product.mk
+include vendor/qcom/opensource/commonsys-intf/display/config/display-interfaces-product.mk
+include vendor/qcom/opensource/commonsys-intf/display/config/display-product-system.mk
+include vendor/qcom/opensource/commonsys/display/config/display-product-commonsys.mk
+
+$(call inherit-product-if-exists, vendor/qcom/common/system/display/display-vendor.mk)
+
+PRODUCT_PACKAGES += \
+    android.hardware.graphics.common-V1-ndk \
+    android.hardware.graphics.common-V1-ndk.vendor \
+    libqdutils \
+    libqservice
+
 # DRM
 PRODUCT_PACKAGES += \
     android.hardware.drm-service.clearkey \
@@ -189,7 +206,6 @@ TARGET_COMMON_QTI_COMPONENTS := \
     audio \
     av \
     bt \
-    display \
     gps \
     init \
     media \
